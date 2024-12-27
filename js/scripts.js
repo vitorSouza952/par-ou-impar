@@ -49,10 +49,16 @@ const definirVencedor = (valorNumero) => {
   const resultado = (Number(valorNumero) + numeroComputador) % 2;
 
   if ((par.checked && resultado === 0) || (impar.checked && resultado !== 0)) {
-    exibirMensagem("Você venceu!", "sucesso");
+    exibirMensagem(
+      `Você: ${valorNumero}. Computador: ${numeroComputador}. Você venceu!`,
+      "sucesso"
+    );
     incrementarPontuacao();
   } else {
-    exibirMensagem("Você perdeu!", "falha");
+    exibirMensagem(
+      `Você: ${valorNumero}. Computador: ${numeroComputador}. Você perdeu!`,
+      "falha"
+    );
     reiniciarJogo();
   }
 
