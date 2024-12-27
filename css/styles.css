@@ -1,0 +1,161 @@
+* {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
+  width: 30rem;
+  max-width: 90%;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+#pontuacao {
+  font-weight: bold;
+}
+
+#mensagem {
+  display: none;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+#mensagem.sucesso {
+  display: block;
+  color: #004d00;
+  background-color: #90ee90;
+}
+
+#mensagem.falha {
+  display: block;
+  color: #8b0000;
+  background-color: #fab0b0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 30rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.area-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.campo-obrigatorio {
+  color: #ff0000;
+}
+
+input[type="number"] {
+  font-size: 0.9rem;
+  padding: 0.9rem 0.7rem;
+  border: 0.067rem solid #999;
+  border-radius: 0.5rem;
+}
+
+.sem-foco:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.label-opcoes {
+  text-align: center;
+}
+
+.area-campos-opcoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.area-campo-opcao {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 0.067rem solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #0077ff;
+  border: 0.2rem solid #fff;
+  outline: 0.067rem solid #0077ff;
+}
+
+input[type="submit"] {
+  align-self: center;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #0077ff;
+  padding: 0.9rem 1.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+  width: 35rem;
+  max-width: 90%;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #0077ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 30px;
+  }
+}

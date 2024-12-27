@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Par ou Ímpar</title>
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <!-- <script src="js/scripts.js" defer></script> -->
+    <script src="js/scripts.min.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Par ou Ímpar</h1>
+      <p>Sua pontuação: <span id="pontuacao">0</span></p>
+      <p id="mensagem">Mensagem de teste.</p>
+    </header>
+
+    <form id="formulario" novalidate>
+      <div class="area-campos">
+        <label for="numero">
+          Digite um número: <span class="campo-obrigatorio">*</span>
+        </label>
+        <input
+          type="number"
+          name="numero"
+          id="numero"
+          class="sem-foco"
+          placeholder="Número inteiro entre 0 e 5"
+          min="0"
+          max="5"
+          required
+        />
+      </div>
+      <div class="area-campos">
+        <p class="label-opcoes">
+          Selecione uma opção: <span class="campo-obrigatorio">*</span>
+        </p>
+        <div class="area-campos-opcoes">
+          <div class="area-campo-opcao">
+            <input type="radio" name="opcao" id="par" value="par" checked />
+            <label for="par">Par</label>
+          </div>
+          <div class="area-campo-opcao">
+            <input type="radio" name="opcao" id="impar" value="impar" />
+            <label for="impar">Ímpar</label>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Jogar" id="botao-jogar" class="sem-foco" />
+    </form>
+
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/vitorSouza952" target="_blank"
+          >Vitor Souza</a
+        >. &copy; <span id="ano-atual">2024</span> Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
